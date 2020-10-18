@@ -3,6 +3,7 @@ import Card from '../components/Card';
 
 import picneat from '../assets/images/picneat.png';
 import foodivore from '../assets/images/foodivore.png';
+import songzilla from '../assets/images/songzilla.png';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
@@ -17,7 +18,7 @@ class Carousel extends React.Component {
                     title: "Pic'nEat",
                     subTitle: "Team Project Wild Code School",
                     imgSrc: picneat,
-                    link: "https://serene-turing-bb26aa.netlify.app/",
+                    link: "https://picneat.netlify.app/",
                     selected: false
                 },
                 {
@@ -25,17 +26,17 @@ class Carousel extends React.Component {
                     title: "Foodivore",
                     subTitle: "Personal project that allows searching for restaurants using the Yelp API",
                     imgSrc: foodivore,
-                    link: "https://gracious-wilson-efec48.netlify.app/",
+                    link: "https://foodivore.netlify.app/",
                     selected: false
                 },
-                // {
-                //     id: 2,
-                //     title: "We'll see afterwards",
-                //     subTitle: "Personal Project",
-                //     imgSrc: jsImage,
-                //     link: "https://serene-turing-bb26aa.netlify.app/",
-                //     selected: false
-                // },
+                {
+                    id: 2,
+                    title: "Songzilla",
+                    subTitle: "Personal project that allows searching for songs using the Spotify API",
+                    imgSrc: songzilla,
+                    link: "https://songzilla.netlify.app/",
+                    selected: false
+                },
             ]    
         }
     }
