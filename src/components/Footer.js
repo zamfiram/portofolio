@@ -1,25 +1,32 @@
-import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import {faLinkedin, faGithub} from "@fortawesome/free-brands-svg-icons";
 
 
-function Footer(){
-    
-    return(
-        <footer className="mt-5">
-            <Container fluid={true}>
-                <Row className="border-top justify-content-between p-3">
-                    {/* <Col className="p-0" md={3} sm={12}>
-                        Madalina Zamfira
-                    </Col> */}
-                    <Col className="p-0 d-flex justify-content-end" md={3}>
-                        Last updated on October 10th
-                    </Col>
-                </Row>
-            </Container>
-        </footer>
-    );
+
+function Footer() {
+  return (
+    <footer>
+      <div className="footer-container">
+        <div className="footer-left">
+          <p className="footer-name">Madalina Zamfira</p>
+          <p>Last updated on October 18th, 2020</p>
+        </div>
+        <div className="footer-right">
+          <a href="mailto:madalina.zamfira@gmail.com">
+            <FontAwesomeIcon icon={faEnvelope} />
+          </a>
+          <a href="https://www.linkedin.com/in/madalina-zamfira/">
+          <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+          <a href="https://github.com/zamfiram">
+          <FontAwesomeIcon icon={faGithub} />
+          </a>
+        </div>
+      </div>
+    </footer>
+  );
 }
 
 export default Footer;
