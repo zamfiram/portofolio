@@ -1,5 +1,5 @@
-body{
-  height: 100%
+body {
+  min-height: 80vh;
 }
 .App {
   text-align: center;
@@ -38,6 +38,10 @@ body{
   to {
     transform: rotate(360deg);
   }
+}
+
+.about-page {
+  min-height: 80vh;
 }
 
 /* Footer */
