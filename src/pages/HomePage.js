@@ -5,7 +5,7 @@ import Hero from '../components/Hero';
 
 function HomePage(props){
     return (
-        <div>
+        <div className="home-page">
             <Hero title={props.title} subTitle={props.subTitle} />
             <Carousel />
         </div>
