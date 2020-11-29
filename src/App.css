@@ -13,6 +13,23 @@ body {
   min-height: 80vh;
 }
 
+/* Header  & homepage*/
+
+.click-homepage,
+.project-link {
+  color: #2b2d42;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.click-homepage:hover,
+.project-link:hover {
+  text-decoration: none;
+  color: #cbc0d3;
+  font-weight: bold;
+
+}
+
 /* Footer */
 
 footer {
@@ -56,6 +73,6 @@ footer {
   color: white;
 }
 
-.footer p{
+.footer p {
   min-width: 10em;
 }

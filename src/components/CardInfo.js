@@ -1,6 +1,7 @@
 import React from "react";
 import { useSpring, animated } from "react-spring";
 import { Badge } from "react-bootstrap";
+import "../App.css";
 
 function CardInfo(props) {
   const style = useSpring({ opacity: 1, from: { opacity: 0 } });
@@ -14,7 +15,12 @@ function CardInfo(props) {
           {props.date}
         </Badge>
       </p>
-      <a href={props.link} target="_blank" rel="noopener noreferrer">
+      <a
+        href={props.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="project-link"
+      >
         View project
       </a>
     </animated.div>

@@ -55,7 +55,7 @@ class Carousel extends React.Component {
         {
           id: 4,
           title: "Pic'nEat",
-          subTitle: "Team Project Wild Code School",
+          subTitle: "First team project at Wild Code School",
           imgSrc: picneat,
           link: "https://picneat.netlify.app/",
           date: "June 2020",
