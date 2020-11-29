@@ -1,11 +1,12 @@
 import React from "react";
 import Card from "../components/Card";
-import {Row, Container} from "react-bootstrap";
+import { Row, Container } from "react-bootstrap";
 
 import picneat from "../assets/images/picneat.png";
 import foodivore from "../assets/images/foodivore.png";
 import songzilla from "../assets/images/songzilla.png";
 import noteboard from "../assets/images/Noteboard.png";
+import portofolio from "../assets/images/portofolio.png";
 
 class Carousel extends React.Component {
   constructor(props) {
@@ -14,38 +15,53 @@ class Carousel extends React.Component {
       items: [
         {
           id: 0,
-          title: "Pic'nEat",
-          subTitle: "Team Project Wild Code School",
-          imgSrc: picneat,
-          link: "https://picneat.netlify.app/",
+          title: "Small noteboard",
+          subTitle:
+            "A simple website to write small notes that will be saved to localStorage",
+          imgSrc: noteboard,
+          link: "https://small-noteboard.netlify.app/",
+          date: "November 2020",
           selected: false,
         },
         {
           id: 1,
-          title: "Foodivore",
-          subTitle:
-            "Personal project that allows searching for restaurants using the Yelp API",
-          imgSrc: foodivore,
-          link: "https://foodivore.netlify.app/",
-          selected: false,
-        },
-        {
-          id: 2,
           title: "Songzilla",
           subTitle:
             "Personal project that allows searching for songs using the Spotify API",
           imgSrc: songzilla,
           link: "https://songzilla.netlify.app/",
+          date: "October 2020",
+          selected: false,
+        },
+        {
+          id: 2,
+          title: "My Portofolio Website",
+          subTitle: "My portofolio website build to showcase my current web developer skills",
+          imgSrc: portofolio,
+          link: "https://portofolio-madalina-zamfira.netlify.app/",
+          date: "September 2020",
           selected: false,
         },
         {
           id: 3,
-          title: "Small noteboard",
-          subTitle: "A simple website to write small notes that will be saved to localStorage",
-          imgSrc: noteboard,
-          link: "https://small-noteboard.netlify.app/",
+          title: "Foodivore",
+          subTitle:
+            "Personal project that allows searching for restaurants using the Yelp API",
+          imgSrc: foodivore,
+          link: "https://foodivore.netlify.app/",
+          date: "September 2020",
           selected: false,
         },
+        {
+          id: 4,
+          title: "Pic'nEat",
+          subTitle: "Team Project Wild Code School",
+          imgSrc: picneat,
+          link: "https://picneat.netlify.app/",
+          date: "June 2020",
+          selected: false,
+        },
+        
       ],
     };
   }

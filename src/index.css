@@ -12,7 +12,6 @@ code {
     monospace;
 }
 
-
 .g-card{
   margin: 20px;
 }
@@ -33,13 +32,13 @@ code {
 .g-card-info{
   margin-top: 10px;
   min-height: 100px;
+  max-width: 350px;
 }
 
 .g-card-sub-title {
   font-size: 16px;
   margin: 0px;
 }
-
 
 .success-msg{
   color: #57A773;

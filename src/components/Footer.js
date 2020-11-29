@@ -22,7 +22,7 @@ function Footer() {
           <a href="https://github.com/zamfiram">
           <FontAwesomeIcon icon={faGithub} />
           </a>
-          <p>Last updated on October 18th, 2020</p>
+          <p>Last updated on November 29th, 2020</p>
         </div>
       </div>
     </footer>
