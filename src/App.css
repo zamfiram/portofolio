@@ -44,15 +44,13 @@ footer {
 .footer-container {
   display: inline-flex;
   flex-direction: row;
-  justify-content: space-between;
-  max-width: 80%;
-  margin: 0 auto;
-  align-items: center;
+  justify-content: center;
+  align-items: stretch;
 }
 
 .footer-right {
-  max-width: 180px;
-  margin-left: 30rem;
+  margin-left: 40rem;
+  color: white;
 }
 
 .footer-right a {
@@ -60,11 +58,13 @@ footer {
   text-align: center;
   padding: 0.5rem;
   font-size: 1.5rem;
+  min-width: 8em;
 }
 
-footer p.footer-name {
-  font-size: 18px;
+.footer-name {
+  font-size: 2rem;
   font-weight: bold;
+  min-width: 8em;
   color: white;
   margin: 0 0 10px;
   padding: 0;
@@ -72,5 +72,8 @@ footer p.footer-name {
 
 .footer-left {
   color: white;
-  margin-left: 15rem;
+}
+
+.footer p{
+  min-width: 10em;
 }

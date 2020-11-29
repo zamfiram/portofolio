@@ -11,7 +11,6 @@ function Footer() {
       <div className="footer-container">
         <div className="footer-left">
           <p className="footer-name">Madalina Zamfira</p>
-          <p>Last updated on October 18th, 2020</p>
         </div>
         <div className="footer-right">
           <a href="mailto:madalina.zamfira@gmail.com">
@@ -23,6 +22,7 @@ function Footer() {
           <a href="https://github.com/zamfiram">
           <FontAwesomeIcon icon={faGithub} />
           </a>
+          <p>Last updated on October 18th, 2020</p>
         </div>
       </div>
     </footer>
