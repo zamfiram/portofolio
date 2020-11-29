@@ -1,12 +1,11 @@
 import React from "react";
 import Card from "../components/Card";
+import {Row, Container} from "react-bootstrap";
 
 import picneat from "../assets/images/picneat.png";
 import foodivore from "../assets/images/foodivore.png";
 import songzilla from "../assets/images/songzilla.png";
-import Container from "react-bootstrap/Container";
 import noteboard from "../assets/images/Noteboard.png";
-import Row from "react-bootstrap/Row";
 
 class Carousel extends React.Component {
   constructor(props) {
