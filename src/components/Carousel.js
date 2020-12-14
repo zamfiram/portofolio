@@ -6,7 +6,6 @@ import picneat from "../assets/images/picneat.png";
 import foodivore from "../assets/images/foodivore.png";
 import songzilla from "../assets/images/songzilla.png";
 import noteboard from "../assets/images/Noteboard.png";
-import portofolio from "../assets/images/portofolio.png";
 
 class Carousel extends React.Component {
   constructor(props) {
