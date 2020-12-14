@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import Hero from "../components/Hero";
 import Content from "../components/Content";
-import resume from "./CV.pdf";
-import { Document, Page } from "react-pdf";
 
 function AboutPage(props) {
   const [numPages, setNumPages] = useState(null);
@@ -30,14 +28,9 @@ function AboutPage(props) {
           You can read more about my biography, experience, skills, education
           and much more in the PDF here below:
         </p>
-        {/* <a href={resume} target="_blank">
+        <a href="/CV.pdf" target="_blank">
           My resume
-        </a> */}
-        <div>
-          <Document file={resume} onLoadSuccess={onDocumentLoadSuccess}>
-            <Page pageNumber={pageNumber} />
-          </Document>
-        </div>
+        </a>
       </Content>
     </div>
   );

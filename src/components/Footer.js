@@ -8,9 +8,9 @@ import {faLinkedin, faGithub} from "@fortawesome/free-brands-svg-icons";
 function Footer() {
   return (
     <footer>
-      <div className="footer-container">
+      <div className="footer-container container">
         <div className="footer-left">
-          <p className="footer-name">Madalina Zamfira</p>
+          Madalina Zamfira
         </div>
         <div className="footer-right">
           <a href="mailto:madalina.zamfira@gmail.com">

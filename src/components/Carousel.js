@@ -35,15 +35,6 @@ class Carousel extends React.Component {
         },
         {
           id: 2,
-          title: "My Portofolio Website",
-          subTitle: "My portofolio website build to showcase my current web developer skills",
-          imgSrc: portofolio,
-          link: "https://portofolio-madalina-zamfira.netlify.app/",
-          date: "September 2020",
-          selected: false,
-        },
-        {
-          id: 3,
           title: "Foodivore",
           subTitle:
             "Personal project that allows searching for restaurants using the Yelp API",
@@ -53,7 +44,7 @@ class Carousel extends React.Component {
           selected: false,
         },
         {
-          id: 4,
+          id: 3,
           title: "Pic'nEat",
           subTitle: "First team project at Wild Code School",
           imgSrc: picneat,

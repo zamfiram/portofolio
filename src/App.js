@@ -35,7 +35,8 @@ class App extends React.Component {
     return (
       <Router>
         <Container className="p-0" fluid={true}>
-          <Navbar className="border-bottom" bg="transparent" expand="lg">
+          <Navbar className="border-bottom" className="header-container" bg="transparent" expand="lg">
+            <div className="container">
             <Navbar.Brand><Link to="/" className="click-homepage">Madalina Zamfira</Link></Navbar.Brand>
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
             <Navbar.Collapse id="navbar-toggle">
@@ -51,6 +52,7 @@ class App extends React.Component {
                 </Link>
               </Nav>
             </Navbar.Collapse>
+            </div>
           </Navbar>
 
           <Route
