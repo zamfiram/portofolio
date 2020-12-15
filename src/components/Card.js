@@ -1,25 +1,34 @@
-import React from "react";
+import React, {useState} from "react";
 import CardInfo from "../components/CardInfo";
 
 function Card(props) {
+  const [isHover, setIsHover] = useState(false)
+  function handleMouseOver() {
+    setIsHover(true);
+  }
+  function handleMouseLeave() {
+    setIsHover(false);
+  }
   return (
     <div
       className="d-inline-block g-card"
-      onClick={(e) => props.click(props.item)}
+      onMouseOver={handleMouseOver}
+      onMouseLeave={handleMouseLeave}
     >
       <img
         className="g-card-image"
-        src={props.item.imgSrc}
-        alt={props.item.imgSrc}
+        src={props.item.url_image}
+        alt={props.item.url_image}
       />
-      {props.item.selected && (
-        <CardInfo
+      {isHover ? <CardInfo
           title={props.item.title}
-          subTitle={props.item.subTitle}
-          date={props.item.date}
-          link={props.item.link}
+          subTitle={props.item.description}
+          date={props.item.date_publication}
+          link={props.item.lien}
         />
-      )}
+      :
+      <></>
+      }
     </div>
   );
 }
