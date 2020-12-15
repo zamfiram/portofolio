@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import {Container, Navbar, Nav} from "react-bootstrap";
+import { Container, Navbar, Nav } from "react-bootstrap";
 import "./App.css";
 
 import Footer from "./components/Footer.js";
@@ -35,29 +35,41 @@ class App extends React.Component {
     return (
       <Router>
         <Container className="p-0" fluid={true}>
-          <Navbar className="border-bottom" className="header-container" bg="transparent" expand="lg">
+          <Navbar
+            className="border-bottom"
+            className="header-container"
+            bg="transparent"
+            expand="lg"
+          >
             <div className="container">
-            <Navbar.Brand><Link to="/" className="click-homepage">Madalina Zamfira</Link></Navbar.Brand>
-            <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
-            <Navbar.Collapse id="navbar-toggle">
-              <Nav className="ml-auto">
-                <Link className="nav-link" to="/">
-                  Home
+              <Navbar.Brand>
+                <Link to="/projects" className="click-homepage">
+                  Madalina Zamfira
                 </Link>
-                <Link className="nav-link" to="/about">
-                  About
-                </Link>
-                <Link className="nav-link" to="/contact">
-                  Contact
-                </Link>
-              </Nav>
-            </Navbar.Collapse>
+              </Navbar.Brand>
+              <Navbar.Toggle
+                className="border-0"
+                aria-controls="navbar-toggle"
+              />
+              <Navbar.Collapse id="navbar-toggle">
+                <Nav className="ml-auto">
+                  <Link className="nav-link" to="/">
+                    Home
+                  </Link>
+                  <Link className="nav-link" to="/about">
+                    About
+                  </Link>
+                  <Link className="nav-link" to="/contact">
+                    Contact
+                  </Link>
+                </Nav>
+              </Navbar.Collapse>
             </div>
           </Navbar>
 
           <Route
-            path="/"
             exact
+            path="/"
             render={() => (
               <HomePage
                 title={this.state.home.title}
