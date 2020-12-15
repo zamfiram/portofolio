@@ -1,10 +1,6 @@
 import React from "react";
 import Card from "../components/Card";
 import { Row, Container } from "react-bootstrap";
-// import picneat from "../assets/images/picneat.png";
-// import foodivore from "../assets/images/foodivore.png";
-// import songzilla from "../assets/images/songzilla.png";
-// import noteboard from "../assets/images/Noteboard.png";
 
 class Carousel extends React.Component {
   constructor(props) {
@@ -14,15 +10,6 @@ class Carousel extends React.Component {
     };
   }
 
-    // items[id].selected = items[id].selected ? false : true;
-
-    // items.forEach((item) => {
-    //   if (item.id !== id) {
-    //     item.selected = false;
-    //   }
-    // });
-
-    // this.setState({ items });
   componentDidMount() {
     fetch("http://localhost:5000/projects")
       .then(response => response.json())
@@ -43,7 +30,7 @@ class Carousel extends React.Component {
   render() {
     return (
       <Container fluid={true}>
-        <Row className="justify-content-around">
+        <Row className="justify-content-around col-md-auto">
           {this.makeItems(this.state.items)}
         </Row>
       </Container>
